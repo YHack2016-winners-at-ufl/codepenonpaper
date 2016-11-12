@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -6,3 +8,18 @@ body {
 a {
   color: #00B7FF;
 }
+
+#console{
+	font-family: 'Inconsolata', monospace;
+}
+
+#editor{
+	height: 150px;
+}
+
+#output {
+        position: absolute; /* Added */
+        right: 0;
+        bottom: 0;
+        left: 0;
+   }

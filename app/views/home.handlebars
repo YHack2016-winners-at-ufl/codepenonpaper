@@ -1,9 +1,33 @@
-<div id="input"></div>
-<div id="render">
-	
-</div>
-<div id="console">
-	Console Log:
-</div>
 <span>{{body}}</span>
+
+<div class="tile is-ancestor">
+    <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box">
+            <p class="title">Input</p>
+            picture.jpg.ok.thx
+        </div>
+        
+    </div>
+    <div class="tile is-parent">
+        <div class="tile is-child box">
+            <p class="title">Result</p>
+            {{{output.html}}}
+        </div>
+    </div>
+
+    <div id="output" class="tile is-child box">
+            <p class="title">Output</p>
+            <div class="tabs">
+                <ul>
+                    <li><a>HTML</a></li>
+                    <li><a>CSS</a></li>
+                    <li class="is-active"><a>JavaScript</a></li>
+                </ul>
+            </div>
+            <div id="editor">
+                {{output.javascript}}
+            </div>
+        </div>
+</div>
+<script type="text/javascript" src="javascripts/ace-editor/ace.js"></script>
 <script type="text/javascript" src="javascripts/main.js"></script>
